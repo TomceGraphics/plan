@@ -1,0 +1,30 @@
+{
+  "name": "plan",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Plan \u2014 a fast, local-first calendar and task planner for Linux",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json --fail-on-warnings",
+    "selftest": "esbuild scripts/selftest.ts --bundle --platform=node --format=esm --log-level=warning --outfile=node_modules/.cache/selftest.mjs && node node_modules/.cache/selftest.mjs",
+    "icons": "sh scripts/gen-icons.sh",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.5.0",
+    "@tauri-apps/plugin-sql": "^2.2.0",
+    "date-fns": "^4.1.0",
+    "rrule": "^2.8.1"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "@tauri-apps/cli": "^2.5.0",
+    "svelte": "^5.28.0",
+    "svelte-check": "^4.1.0",
+    "typescript": "^5.7.0",
+    "vite": "^6.3.0"
+  }
+}

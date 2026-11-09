@@ -1,0 +1,18 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name={{name}}
+GenericName=Calendar and Tasks
+Comment={{comment}}
+Exec={{exec}} %U
+Icon={{icon}}
+Terminal=false
+Categories=Office;Calendar;ProjectManagement;
+Keywords=calendar;tasks;planner;todo;schedule;
+StartupNotify=true
+StartupWMClass=dev.plan.planner
+Actions=quick-add;
+
+[Desktop Action quick-add]
+Name=Quick add
+Exec={{exec}} --quick-add
