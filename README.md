@@ -110,7 +110,7 @@ npm run tauri dev
 npm run tauri build
 ```
 
-> An RPM package is planned for a later release. For now, Plan is distributed as source code.
+> An RPM package is available on the [Releases](../../releases) page.
 
 ## Google Calendar sync
 
@@ -122,10 +122,15 @@ Everything is stored locally in a SQLite database (`plan.db`) in your user data 
 
 ## Roadmap
 
-- [x] **1.0.0**: per-event colors and smoother modals
-- [ ] **1.2**: schedule view
-- [ ] RPM package for Fedora
+- [x] **1.0.0**: per-event colors
+- [ ] **1.1**: schedule view
+
+## Known bugs
+
+- [ ] **Quick add overflow:** the quick-add box has a visual overflow issue.
+- [ ] **Modal flashing:** the screen flashes when opening modals (quick add, command palette). Still not fixed.
 
 ## License
 
-Add your license here (for example MIT) and place the full text in a `LICENSE` file.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
